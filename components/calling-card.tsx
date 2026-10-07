@@ -56,11 +56,11 @@ export function CallingCard() {
                 className="group flex min-w-0 flex-1 items-center justify-between gap-4 rounded-xl bg-muted px-4 py-3 transition-colors hover:bg-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <span className="flex min-w-0 flex-col">
-                  <span className="text-xs text-muted-foreground">{label}</span>
+                  <span className="text-xs text-muted-foreground group-hover:text-primary-foreground">{label}</span>
                   <span className="truncate font-mono text-sm">{value}</span>
                 </span>
                 <Icon
-                  className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-foreground"
+                  className="size-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-primary-foreground"
                   aria-hidden="true"
                 />
                 {external && <span className="sr-only">(opens in a new tab)</span>}

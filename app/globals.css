@@ -30,19 +30,20 @@
 :root {
   color-scheme: light;
   /* Light blue is the single brand color; everything else is neutral. */
-  --background: oklch(0.88 0.06 230);
-  --foreground: oklch(0.25 0.03 245);
-  --card: oklch(0.995 0.003 230);
-  --card-foreground: oklch(0.25 0.03 245);
-  --primary: oklch(0.88 0.06 230);
-  --primary-foreground: oklch(0.25 0.03 245);
-  --muted: oklch(0.96 0.01 230);
-  --muted-foreground: oklch(0.48 0.02 245);
-  --accent: oklch(0.88 0.06 230);
-  --accent-foreground: oklch(0.25 0.03 245);
-  --border: oklch(0.9 0.02 230);
-  --input: oklch(0.9 0.02 230);
-  --ring: oklch(0.6 0.1 235);
+  --blue: oklch(0.8 0.09 232);
+  --background: var(--blue);
+  --foreground: oklch(0.22 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.22 0 0);
+  --primary: var(--blue);
+  --primary-foreground: oklch(0.22 0 0);
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.45 0 0);
+  --accent: var(--blue);
+  --accent-foreground: oklch(0.22 0 0);
+  --border: oklch(0.91 0 0);
+  --input: oklch(0.91 0 0);
+  --ring: var(--blue);
   --radius: 1rem;
 }
 
