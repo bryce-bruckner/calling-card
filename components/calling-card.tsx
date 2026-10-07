@@ -1,4 +1,5 @@
 import { ArrowUpRight, Mail } from 'lucide-react'
+import { CopyEmailButton } from './copy-email-button'
 
 const contacts = [
   {
@@ -47,11 +48,12 @@ export function CallingCard() {
         </h2>
         <ul className="flex flex-col gap-2">
           {contacts.map(({ label, value, href, icon: Icon, external }) => (
-            <li key={label}>
+            <li key={label} className="flex gap-2">
               <a
                 href={href}
-                {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                className="group flex items-center justify-between gap-4 rounded-xl bg-muted px-4 py-3 transition-colors hover:bg-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex min-w-0 flex-1 items-center justify-between gap-4 rounded-xl bg-muted px-4 py-3 transition-colors hover:bg-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <span className="flex min-w-0 flex-col">
                   <span className="text-xs text-muted-foreground">{label}</span>
@@ -63,6 +65,7 @@ export function CallingCard() {
                 />
                 {external && <span className="sr-only">(opens in a new tab)</span>}
               </a>
+              {!external && <CopyEmailButton email={value} />}
             </li>
           ))}
         </ul>
