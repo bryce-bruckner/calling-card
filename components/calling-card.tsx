@@ -28,6 +28,7 @@ export function CallingCard() {
         <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
           Bryce Bruckner
         </h1>
+        <p className="text-sm text-muted-foreground">Looking for internships</p>
         <div className="h-1.5 w-16 rounded-full bg-primary" aria-hidden="true" />
       </header>
 
